@@ -18,13 +18,12 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    @SuppressLint("SetJavaScriptEnabled")
     private fun openWebView() {
         webview.webChromeClient = WebChromeClient()
         webview.webViewClient = WebViewClient()
         webview.settings.javaScriptEnabled = true
         webview.settings.setSupportMultipleWindows(true)
-        webview.loadUrl(getString(R.string.app_link))
+        webview.loadUrl("http://hr.edf.edu.eg/edf")
     }
 
 }
